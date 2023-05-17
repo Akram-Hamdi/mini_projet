@@ -22,6 +22,13 @@ urlpatterns = [
     #---------------------Portfolio------------------------------------------
     path('projet/<int:projet_id>/', views.detailprojet, name='detailprojet'),
     path('', views.projet, name='projet'),
+    
+    
+    
+    
+    
+    
+    
     path('add_projet/', views.add_projet, name='add_projet'),
     path('projet/<int:projet_id>/delete/', views.delete_projet, name='delete_projet'),
     path('projet/<int:projet_id>/edit/', views.edit_projet, name='edit_projet'),
