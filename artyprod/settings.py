@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-lvqa+nx!h)i8say7j%@hw)$50sxtehl-ly0)wh9)bi1tzue)k7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -135,6 +135,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR,'artyweb/staticfiles')
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'artyweb/static')
 ]
